@@ -49,4 +49,331 @@ make: *** [Makefile:8: mandelbrot] Error 1
 [?2004l[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ exit
 [?2004lexit
 Script done.
-[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clen[Kan && make
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+make: *** No rule to make target 'main.o', needed by 'mandelbrot'.  Stop.
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+make: *** No rule to make target 'mandelbrot_openmp.o', needed by 'mandelbrot'.  Stop.
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot 200 150 100 4[27m./mandelbrot 200 150 100 4
+[?2004lbash: ./mandelbrot: No such file or directory
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ ./mandelbrot 200 150 100 4make[Kexitcat evidencias.logmake[K[1Ppwdwhoami[2Pdatecd.. plgg/script -a evidencias.logpwd[Kscript -a evidencias.log[16Pcd plgg/[4P..datewhoami[3Ppwdmakecat evidencias.logexit[Kmake./mandelbrot 200 150 100 4[Kmake clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o -lm
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot 200 150 100 4[27m./mandelbrot 200 150 100 4
+[?2004l[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.001331 segundos
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot[27m./mandelbrot
+[?2004lbash: ./mandelbrot: No such file or directory
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ mae[Kke
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o -lm
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot[27m./mandelbrot
+[?2004lErro: numero de argumentos invalido.
+Uso: ./mandelbrot [largura] [altura] [max_iteracoes] [num_threads]
+[?200Script started on 2026-08-31 18:14:59-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="152" LINES="22"]
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+make: *** No rule to make target 'mandelbrot_openmp.o', needed by 'mandelbrot'.  Stop.
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot 200 150 100 4[27m./mandelbrot 200 150 100 4
+[?2004lbash: ./mandelbrot: No such file or directory
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ ./mandelbrot 200 150 100 4make[Kexitcat evidencias.logmake[K[1Ppwdwhoami[2Pdatecd.. plgg/script -a evidencias.logpwd[Kscript -a evidencias.log[16Pcd plgg/[4P..datewhoami[3Ppwdmakecat evidencias.logexit[Kmake./mandelbrot 200 150 100 4[Kmake clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o -lm
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot 200 150 100 4[27m./mandelbrot 200 150 100 4
+[?2004l[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7mcat times.txt[27mcat times.txt
+[?2004lSerial: 0.001331 segundos
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot[27m./mandelbrot
+[?2004lbash: ./mandelbrot: No such file or directory
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ mae[Kke
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o -lm
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot[27m./mandelbrot
+[?2004lErro: numero de argumentos invalido.
+Uso: ./mandelbrot [largura] [altura] [max_iteracoes] [num_threads]
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot abc 100 50 2[27m./mandelbrot abc 100 50 2
+[?2004lErro: largura invalida (abc). Deve ser um inteiro positivo.
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerr4h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot abc 100 50 2[27m./mandelbrot abc 100 50 2
+[?2004lErro: largura invalida (abc). Deve ser um inteiro positivo.
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot 100 -10 50 2[27m./mandelbrot 100 -10 50 2
+[?2004lErro: altura invalida (-10). Deve ser um inteiro positivo.
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot 100 100 50 0[27m./mandelbrot 100 100 50 0
+[?2004lErro: numero de threads invalido (0). Deve ser um inteiro positivo.
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o -lm -lpthread
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o -lm -lpthread
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot 100 400 200 4[27m./mandelbrot 100 400 200 4
+[?2004lSegmentation fault (core dumped)
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o -lm -lpthread
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean./mandelbrot 100 400 200 4
+[?2004l[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra a/Downloads/plgg[00m$ [7m./mandelbrot 100 -10 50 2[27m./mandelbrot 100 -10 50 2
+[?2004lErro: altura invalida (-10). Deve ser um inteiro positivo.
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot 100 100 50 0[27m./mandelbrot 100 100 50 0
+[?2004lErro: numero de threads invalido (0). Deve ser um inteiro positivo.
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o -lm -lpthread
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o -lm -lpthread
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot 100 400 200 4[27m./mandelbrot 100 400 200 4
+[?2004lSegmentation fault (core dumped)
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o -lm -lpthread
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean./mandelbrot 100 400 200 4
+[?2004l[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o -lm -lpthread
+[?2004h]0;gue-O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o -lm -lpthread
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot 50 50 50 100000[27m./mandelbrot 50 50 50 100000
+[?2004l[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o -lm -lpthread
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o mandelbrot_openmp.c -lm -lpthread
+[01m[Kmandelbrot_openmp.c:[m[K In function ‘[01m[Krodar_openmp[m[K’:
+[01m[Kmandelbrot_openmp.c:21:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+   21 |     #pragma omp parallel for schedule(dynamic, 4)
+      | 
+/usr/bin/ld: /tmp/ccp8hC4e.o: in function `rodar_openmp':
+mandelbrot_openmp.c:(.text+0x6c): undefined reference to `omp_set_num_threads'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -c mandelbrot_openmp.c -o mandelbrot_openmp.o
+[01m[Kmandelbrot_openmp.c:[m[K In function ‘[01m[Krodar_openmp[m[K’:
+[01m[Kmandelbrot_openmp.c:21:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-prra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot 50 50 50 100000[27m./mandelbrot 50 50 50 100000
+[?2004l[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o -lm -lpthread
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o mandelbrot_openmp.c -lm -lpthread
+[01m[Kmandelbrot_openmp.c:[m[K In function ‘[01m[Krodar_openmp[m[K’:
+[01m[Kmandelbrot_openmp.c:21:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+   21 |     #pragma omp parallel for schedule(dynamic, 4)
+      | 
+/usr/bin/ld: /tmp/ccp8hC4e.o: in function `rodar_openmp':
+mandelbrot_openmp.c:(.text+0x6c): undefined reference to `omp_set_num_threads'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -c mandelbrot_openmp.c -o mandelbrot_openmp.o
+[01m[Kmandelbrot_openmp.c:[m[K In function ‘[01m[Krodar_openmp[m[K’:
+[01m[Kmandelbrot_openmp.c:21:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+   21 |     #pragma omp parallel for schedule(dynamic, 4)
+      | 
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o mandelbrot_openmp.o -lm -lpthread
+/usr/bin/ld: mandelbrot_openmp.o: in function `rodar_openmp':
+mandelbrot_openmp.c:(.text+0x6c): undefined reference to `omp_set_num_threads'
+collect2: error: ld returned 1 exit status
+make: ***ragmas]8;;[m[K]
+   21 |     #pragma omp parallel for schedule(dynamic, 4)
+      | 
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o mandelbrot_openmp.o -lm -lpthread
+/usr/bin/ld: mandelbrot_openmp.o: in function `rodar_openmp':
+mandelbrot_openmp.c:(.text+0x6c): undefined reference to `omp_set_num_threads'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:10: mandelbrot] Error 1
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -c mandelbrot_openmp.c -o mandelbrot_openmp.o
+[01m[Kmandelbrot_openmp.c:[m[K In function ‘[01m[Krodar_openmp[m[K’:
+[01m[Kmandelbrot_openmp.c:21:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+   21 |     #pragma omp parallel for schedule(dynamic, 4)
+      | 
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o mandelbrot_openmp.o -lm -lpthread -fopenmp
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -fopenmp -c main.c -o main.o
+gcc -Wall -Wextra -O2 -fopenmp -c common.c -o common.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_openmp.c -o mandelbrot_openmp.o
+gcc -Wall -Wextra -O2 -fopenmp -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o mandelbrot_openmp.o -lm -lpthread 
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -fopenmp -c main.c -o main.o
+gcc -Wall -Wextra -O2 -fopenmp -c common.c -o common.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_openmp.c -o mandelbrot_openmp.o
+gcc -Wall -Wextra -O2 -fopenmp -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o mandelbrot_openmp.o -lm -lpthread 
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot 200 150 100 4[27m./mandelbrot 200 150 100 4
+[?2004l[?2004h]0;guerra@PCdePedroGuerra: /m [Makefile:10: mandelbrot] Error 1
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -c main.c -o main.o
+gcc -Wall -Wextra -O2 -c common.c -o common.o
+gcc -Wall -Wextra -O2 -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -c mandelbrot_openmp.c -o mandelbrot_openmp.o
+[01m[Kmandelbrot_openmp.c:[m[K In function ‘[01m[Krodar_openmp[m[K’:
+[01m[Kmandelbrot_openmp.c:21:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+   21 |     #pragma omp parallel for schedule(dynamic, 4)
+      | 
+gcc -Wall -Wextra -O2 -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o mandelbrot_openmp.o -lm -lpthread -fopenmp
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -fopenmp -c main.c -o main.o
+gcc -Wall -Wextra -O2 -fopenmp -c common.c -o common.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_openmp.c -o mandelbrot_openmp.o
+gcc -Wall -Wextra -O2 -fopenmp -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o mandelbrot_openmp.o -lm -lpthread 
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -fopenmp -c main.c -o main.o
+gcc -Wall -Wextra -O2 -fopenmp -c common.c -o common.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_openmp.c -o mandelbrot_openmp.o
+gcc -Wall -Wextra -O2 -fopenmp -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o mandelbrot_openmp.o -lm -lpthread 
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m./mandelbrot 200 150 100 4[27m./mandelbrot 200 150 100 4
+[?2004l[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m(ulimit -v 20000; ./mandelbrot 5000 5000 100 4)[27m(ulimit -v 20000; ./mandelbrot 5000 5000 100 4)
+[?2004lbash: ./mandelbrot: No such file or directory
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -fopenmp -c main.c -o main.o
+gcc -Wall -Wextra -O2 -fopenmp -c common.c -o common.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_serial.c -o mandelbrot_serial.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_pthreads1.c -o mandelbrot_pthreads1.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_pthreads2.c -o mandelbrot_pthreads2.o
+gcc -Wall -Wextra -O2 -fopenmp -c mandelbrot_openmp.c -o mandelbrot_openmp.o
+gcc -Wall -Wextra -O2 -fopenmp -o mandelbrot main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o mandelbrot_openmp.o -lm -lpthread 
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7m(ulimit -v 20000; ./mandelbrot 5000 5000 100 4)[27m(ulimit -v 20000; ./mandelbrot 5000 5000 100 4)
+[?2004lErro: falha ao alocar memoria para a implementacao serial.
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make clean
+[?2004lrm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-31 18:43:28-03:00 [COMMAND_EXIT_CODE="0"]
