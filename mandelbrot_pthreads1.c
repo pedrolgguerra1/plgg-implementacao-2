@@ -34,8 +34,15 @@ int rodar_pthreads1(Params p, const char *login) {
     }
 
     int num_threads = p.num_threads;
+    if (num_threads > p.height) num_threads = p.height;
+
     pthread_t *threads = malloc((size_t)num_threads * sizeof(pthread_t));
     TarefaBloco *tarefas = malloc((size_t)num_threads * sizeof(TarefaBloco));
+    if (threads == NULL || tarefas == NULL) {
+        fprintf(stderr, "Erro: falha ao alocar memoria para as threads (pthreads1).\n");
+        free(pixels); free(threads); free(tarefas);
+        return -1;
+    }
 
     struct timespec inicio, fim;
     clock_gettime(CLOCK_MONOTONIC, &inicio);
@@ -43,6 +50,7 @@ int rodar_pthreads1(Params p, const char *login) {
     int linhas_por_thread = p.height / num_threads;
     int resto = p.height % num_threads;
     int y_atual = 0;
+    int criadas = 0;
 
     for (int i = 0; i < num_threads; i++) {
         int bloco = linhas_por_thread + (i < resto ? 1 : 0);
@@ -53,16 +61,29 @@ int rodar_pthreads1(Params p, const char *login) {
         tarefas[i].max_iter = p.max_iter;
         tarefas[i].pixels = pixels;
         y_atual += bloco;
-        pthread_create(&threads[i], NULL, worker_bloco, &tarefas[i]);
+
+        if (pthread_create(&threads[i], NULL, worker_bloco, &tarefas[i]) != 0) {
+            fprintf(stderr, "Erro: falha ao criar a thread %d (pthreads1).\n", i);
+            for (int j = 0; j < criadas; j++) pthread_join(threads[j], NULL);
+            free(pixels); free(threads); free(tarefas);
+            return -1;
+        }
+        criadas++;
     }
-    for (int i = 0; i < num_threads; i++) pthread_join(threads[i], NULL);
+
+    for (int i = 0; i < criadas; i++) {
+        pthread_join(threads[i], NULL);
+    }
 
     clock_gettime(CLOCK_MONOTONIC, &fim);
     double segundos = (fim.tv_sec - inicio.tv_sec) + (fim.tv_nsec - inicio.tv_nsec) / 1e9;
 
     char nome_arquivo[256];
     snprintf(nome_arquivo, sizeof(nome_arquivo), "mandelbrot_%s_pthreads1.pgm", login);
-    escrever_saida(nome_arquivo, pixels, p.width, p.height);
+
+    int status = escrever_saida(nome_arquivo, pixels, p.width, p.height);
     free(pixels); free(threads); free(tarefas);
+    if (status != 0) return -1;
+
     return registrar_tempo("Pthreads1 (blocos contiguos)", segundos);
 }
