@@ -4,13 +4,6 @@
 #include <pthread.h>
 #include "common.h"
 
-/* Estrategia 2: divisao ENTRELACADA (round-robin). A thread de id "tid"
- * calcula as linhas tid, tid + num_threads, tid + 2*num_threads, ...
- * Isso e diferente da estrategia 1 (blocos contiguos) e ajuda a balancear
- * o trabalho quando a regiao tem partes com custo de calculo desigual
- * (pontos fora do conjunto escapam rapido, pontos dentro gastam todas as
- * iteracoes), pois cada thread pega linhas espalhadas por toda a imagem
- * em vez de um bloco unico. */
 typedef struct {
     int tid;
     int stride;

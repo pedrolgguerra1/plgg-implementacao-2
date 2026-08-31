@@ -16,8 +16,6 @@ int rodar_openmp(Params p, const char *login) {
     struct timespec inicio, fim;
     clock_gettime(CLOCK_MONOTONIC, &inicio);
 
-    /* Paralelizamos o laco externo (linhas). Cada linha e independente das
-     * demais, entao nao ha necessidade de secao critica ou reducao. */
     #pragma omp parallel for schedule(dynamic, 4)
     for (int y = 0; y < p.height; y++) {
         for (int x = 0; x < p.width; x++) {
