@@ -5,6 +5,7 @@
 
 int rodar_serial(Params p, const char *login);
 int rodar_pthreads1(Params p, const char *login);
+int rodar_pthreads2(Params p, const char *login);
 
 int main(int argc, char **argv) {
     Params p;
@@ -15,6 +16,7 @@ int main(int argc, char **argv) {
 
     if (rodar_serial(p, LOGIN) != 0) return 1;
     if (rodar_pthreads1(p, LOGIN) != 0) return 1;
+    if (rodar_pthreads2(p, LOGIN) != 0) return 1;
 
     return 0;
 }
