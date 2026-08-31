@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -O2
-LDFLAGS = -lm -lpthread -fopenmp
+CFLAGS = -Wall -Wextra -O2 -fopenmp
+LDFLAGS = -lm -lpthread 
 
 OBJS = main.o common.o mandelbrot_serial.o mandelbrot_pthreads1.o mandelbrot_pthreads2.o mandelbrot_openmp.o
 
