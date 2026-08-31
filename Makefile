@@ -1,14 +1,18 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -O2
+LDFLAGS = -lm
 
-OBJS = 
+OBJS = main.o common.o mandelbrot_serial.o
+
 all: mandelbrot
 
 mandelbrot: $(OBJS)
-	$(CC) $(CFLAGS) -o mandelbrot $(OBJS)
+	$(CC) $(CFLAGS) -o mandelbrot $(OBJS) $(LDFLAGS)
 
 %.o: %.c common.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	
+	rm -f *.o mandelbrot mandelbrot_plgg_*.pgm times.txt
+
+.PHONY: all clean

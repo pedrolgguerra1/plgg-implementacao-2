@@ -1,0 +1,52 @@
+Script started on 2026-08-31 18:05:04-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="152" LINES="22"]
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ date
+[?2004lMon Aug 31 18:05:20 -03 2026
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ whoami
+[?2004lguerra
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ pwd
+[?2004l/mnt/c/Users/Guerra/Downloads/plgg
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -o mandelbrot 
+[01m[Kgcc:[m[K [01;31m[Kfatal error: [m[Kno input files
+compilation terminated.
+make: *** [Makefile:8: mandelbrot] Error 1
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make[1Ppwdwhoami[2Pdatecd.. plgg/script -a evidencias.logpwd[Kwhoami[2Pdatebashmake clean./processflow[3Pmake clean[6Pbashdatewhoami[3Ppwdscript -a evidencias.log[16Pcd plgg/[4P..datewhoami[3Ppwdmake[Kcat wvidencias[1Pvidenciasevidencias[C[C[C[C[C[C[C[C[C.log
+[?2004l[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-31 18:07:09-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-31 17:59:06-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="152" LINES="22"]
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ date
+[?2004lMon Aug 31 17:59:11 -03 2026
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ whoami
+[?2004lguerra
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ pwd
+[?2004l/mnt/c/Users/Guerra/Downloads/plgg
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -o mandelbrot 
+[01m[Kgcc:[m[K [01;31m[Kfatal error: [m[Kno input files
+compilation terminated.
+make: *** [Makefile:8: mandelbrot] Error 1
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ ls ^[K~
+[?2004l[0m[01;34mInfrSW[0m  [01;32mplgg.tar[0m
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7mls /mnt/c/Users/Guerra/Downloads/plgg[27mls /mnt/c/Users/Guerra/Downloads/plgg
+[?2004l[0m[01;32mMakefile[0m  [01;32mREADME.md[0m  [01;32mcommon.c[0m  [01;32mcommon.h[0m  [01;32mevidencias.log[0m  [01;32mmandelbrot_serial.c[0m
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7mcat evidencias.log[27mcat evidencias.log
+[?2004l[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ [7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ date
+[?2004lMon Aug 31 18:05:20 -03 2026
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ whoami
+[?2004lguerra
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ pwd
+[?2004l/mnt/c/Users/Guerra/Downloads/plgg
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make
+[?2004lgcc -Wall -Wextra -O2 -o mandelbrot 
+[01m[Kgcc:[m[K [01;31m[Kfatal error: [m[Kno input files
+compilation terminated.
+make: *** [Makefile:8: mandelbrot] Error 1
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ make[1Ppwdwhoami[2Pdatecd.. plgg/script -a evidencias.logpwd[Kwhoami[2Pdatebashmake clean./processflow[3Pmake clean[6Pbashdatewhoami[3Ppwdscript -a evidencias.log[16Pcd plgg/[4P..datewhoami[3Ppwdmake[Kcat wvidencias[1Pvidenciasevidencias[C[C[C[C[C[C[C[C[C.log
+[?2004l[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[01;32mguerra@PCdePedroGuerra[00m:[01;34m/mnt/c/Users/Guerra/Downloads/plgg[00m$ exit
+[?2004lexit
+Script done.
+[?2004h]0;guerra@PCdePedroGuerra: /mnt/c/Users/Guerra/Downloads/plgg[
