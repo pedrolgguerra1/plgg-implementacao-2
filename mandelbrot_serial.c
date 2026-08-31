@@ -11,7 +11,7 @@ int rodar_serial(Params p, const char *login) {
     }
 
     struct timespec inicio, fim;
-    clock_gettime(CLOCK_MONOTONIC, &inicio)
+    clock_gettime(CLOCK_MONOTONIC, &inicio);
 
     for (int y = 0; y < p.height; y++) {
         for (int x = 0; x < p.width; x++) {
