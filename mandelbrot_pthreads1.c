@@ -27,7 +27,7 @@ static void *worker_bloco(void *arg) {
 }
 
 int rodar_pthreads1(Params p, const char *login) {
-    unsigned char *pixels = malloc((size_t)p.width * (size_t)p.width * sizeof(unsigned char));
+    unsigned char *pixels = malloc((size_t)p.width * (size_t)p.height * sizeof(unsigned char));
     if (pixels == NULL) {
         fprintf(stderr, "Erro: falha ao alocar memoria para pthreads1.\n");
         return -1;
